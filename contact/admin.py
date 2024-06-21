@@ -10,3 +10,6 @@ class ContatoAdmin(admin.ModelAdmin):
     list_max_show_all = 50
     # list_editable = 'first_name','last_name',
 
+@admin.register(models.Categoria)
+class CategoriaAdmin (admin.ModelAdmin):
+    list_display = ('id','name',)
