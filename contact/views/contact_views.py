@@ -56,10 +56,11 @@ def search(request):
 
     context = { 
         'contact':contact,
-        'site_title': 'Search - '
+        'site_title': 'Search - ',
+        'search_value': search_value
     }
     return render(
         request,
         'contact/index.html',
-        context
+        context,
     )
