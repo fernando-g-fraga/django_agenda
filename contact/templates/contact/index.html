@@ -1,6 +1,6 @@
 {% extends "global/base.html" %} 
 {% block content %}
-{% if contact %}
+{% if page_obj %}
 <div class="resposive-table">
   <table class="contacts-table">
     <caption class="table-caption">
@@ -17,7 +17,7 @@
     </thead>
 
     <tbody>
-      {% for contact in contact %}
+      {% for contact in page_obj %}
       <tr class="table-row">
         <td class="table-cell">
           <a class="table-link" href="{% url 'contact:contact' contact.id %}">
