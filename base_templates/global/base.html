@@ -10,7 +10,48 @@
 <body>
     <main class='content'>
     {% block content %}    
-   
+        <h1 class="single-contact">
+            {{contact.first_name}}
+        </h1>
+
+        <p>
+            <strong>
+                ID: 
+            </strong>
+            {{contact.id}}
+        </p>
+        <p>
+            <strong>
+                Email: 
+            </strong>
+            {{contact.email}}
+        </p>
+        <p>
+            <strong>
+                Phone: 
+            </strong>
+            {{contact.phone}}
+        </p>
+        <p>
+            <strong>
+                created_data: 
+            </strong>
+            {{contact.created_data}}
+        </p>
+        <p>
+            <strong>
+                description: 
+            </strong>
+            {{contact.description}}
+        </p>
+        <p>
+            <strong>
+                category: 
+            </strong>
+            {{contact.category}}
+        </p>
+
+
 
        
     {% endblock content %}
