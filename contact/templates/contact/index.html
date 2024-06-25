@@ -1,1 +1,41 @@
 {% extends "global/base.html" %}
+{% block content %}
+    <div class="resposive-table">
+        <table class="contacts-table">
+            <caption class="table-caption">
+                Contacts
+            </caption>
+            <thead>
+               <tr> 
+                <td class="table-row table-row-header">ID</td>
+                <td class="table-row table-row-header">First Name</td>
+                <td class="table-row table-row-header">Last Name</td>
+                <td class="table-row table-row-header">Phone</td>
+                <td class="table-row table-row-header">E-mail</td>
+               </tr> 
+            </thead>
+
+            <tbody> 
+                {% for contact in contact %}
+                <tr class="table-row">
+                    <td class="table-cell">
+                        <a class='table-link'href="#">{{contact.id}}</a>
+                    </td>
+                    <td class="table-cell">
+
+                    </td>
+                    <td class="table-cell">
+
+                    </td>
+                    <td class="table-cell">
+
+                    </td>
+                    <td class="table-cell">
+
+                    </td>
+                </tr>                
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endblock content %}
