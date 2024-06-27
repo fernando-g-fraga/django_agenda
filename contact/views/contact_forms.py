@@ -67,11 +67,8 @@ def update(request,contact_id):
     )
 
 def delete(request,contact_id):
-    print('entrando no object 404')
     contact = get_object_or_404(Contato, id=contact_id, show=True)    
-    print('saindo do object 404')
     confirmation = request.POST.get('confirmation','no')
-    print('returning confirmation', confirmation)
 
     if confirmation == 'yes':    
         contact.delete()
