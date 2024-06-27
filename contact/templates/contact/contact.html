@@ -26,6 +26,26 @@
     <strong> Category: </strong>
     {{contact.Categoria.name}}
   </p>
+  {% if contact.picture %}
+  <p>
+    <img src="{{contact.picture.url}}" alt="{{contact.first_name}}  {{contact.last_name}}"
+  </p>
+  {% endif %}
+</div>
+
+<div class="contact-links">
+  <a href="{% url 'contact:update' contact.id %}" class="btn btn-link">Update</a>
+
+  <form action="{% url 'contact:delete' contact.id %}" method="post">
+    {% csrf_token %}
+
+    {% if confirmation == 'no' %}
+    <input type="hidden" name="confirmation" value="yes">
+    <button class="btn btn-link btn-delete" type="submit">Confirma?</button>
+    {% else %}
+    <button class="btn btn-link btn-delete" type="submit">Delete</button>
+    {% endif %}
+  </form>
 </div>
 
 {% endblock content %}
