@@ -21,7 +21,7 @@ class ContactForm(forms.ModelForm):
     class Meta:
         model = models.Contato
         fields = (
-            'first_name', 'last_name', 'phone',
+            'first_name', 'last_name', 'phone','email','description','Categoria',
         )
         # widgets = {
         #     'first_name': forms.TextInput(
