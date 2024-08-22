@@ -12,7 +12,6 @@ A Django-based web application for managing contacts data, utilizing PostgreSQL 
 - **Backend Framework:** Django
 - **Database:** PostgreSQL
 - **Frontend:** HTML/CSS (Django Templates)
-- **Deployment:** [Insert Deployment Method Here] (e.g., Docker, Heroku)
 
 
 ## Usage
