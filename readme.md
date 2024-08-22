@@ -1,4 +1,4 @@
-# Contacts Manager
+# Agenda DJANGO
 
 A Django-based web application for managing contacts data, utilizing PostgreSQL as the database backend.
 
